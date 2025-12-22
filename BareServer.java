@@ -21,12 +21,12 @@ public class BareServer {
                 String userAgent = "Not Found";
 
                 while ((headerLine = reader.readLine()) != null && !headerLine.isEmpty()) {
-                    // Check for User-Agent (case-insensitive)
+                    System.out.println("DEBUG [Request Header]: " + headerLine);
                     if (headerLine.toLowerCase().startsWith("user-agent:")) {
                         userAgent = headerLine.substring("user-agent:".length()).trim();
                     }
                 }
-
+                System.out.println("--- End of Request ---");
                 // 3. Send Response (Now we use the variable!)
                 String body = "<html><body>" +
                         "<h1>Server Logic Check</h1>" +

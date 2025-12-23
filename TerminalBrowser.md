@@ -1,5 +1,7 @@
 # 🏁 HTTP Reflection: Mental Wiring Complete
 
+`ncat -l 9000`
+
 ### ✅ Goal: See HTTP as Plain Text
 
 I successfully bypassed high-level APIs to interact with the raw protocol.
